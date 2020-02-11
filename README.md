@@ -1,4 +1,4 @@
-# auto-audit
+# auto-audit - Automating the WCAG2.0 Project for auditing ARC webpages
 
 ## Introduction:
 
@@ -29,3 +29,11 @@ I am first going to make this tool work in Safari. One of the limitations of wor
 I am trying to run safaridriver under python 3.4 and get error KeyError: 'status' because safaridriver is not compatible with python 3.4
 It works with python 3.5+ but then pynput requires python 3.4
 So, I either do not use pynput or do not use safaridriver.
+
+Solution: I installed Python 3.5 and solved the safaridriver issue. Impact on pynput remains to be seen.
+
+## Tips & Tricks
+
+When installing a package like pynput with pip, because conda does not have that package available, run pip with absolute path to the environment:
+/Users/melocal/anaconda3/envs/c4g-wcag/bin/pip install pynput
+That will install pynput (or any package) in that particular environment only and not globally.

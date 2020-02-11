@@ -1,3 +1,4 @@
+#!/Users/melocal/anaconda3/envs/c4g-wcag/bin/python
 import os
 import sys
 import time
@@ -7,7 +8,9 @@ import selenium
 from openpyxl import load_workbook
 from selenium import webdriver
 
-# from selenium.webdriver.common.keys import Keys
+import pynput
+
+# from pynput.keyboard import Controller, Key
 
 # should print version 3.5 for pynput dependency
 print("Python --version ==", sys.version)
@@ -30,3 +33,4 @@ for i in range(2, 5):
     driver.get(url)
     print(driver.title)
     time.sleep(0.1)
+    input()
