@@ -24,6 +24,8 @@ pyinput for sending keypress input to the browser
 
 I am first going to make this tool work in Safari. One of the limitations of working in Safari is that I am not experienced with Apple Script to programatically control the Safari browser Audit tool.
 
-## Testing
+## Blockers
 
-I am going to keep this script as simple as possible so skip unittest for now.
+I am trying to run safaridriver under python 3.4 and get error KeyError: 'status' because safaridriver is not compatible with python 3.4
+It works with python 3.5+ but then pynput requires python 3.4
+So, I either do not use pynput or do not use safaridriver.
