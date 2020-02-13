@@ -21,7 +21,7 @@ print("selenium version ==", selenium.__version__)
 driver = webdriver.Safari(executable_path='/usr/bin/safaridriver')
 
 os.chdir('/Users/melocal/MyDox/RedCross/Code4Good/WCAG2.0')
-wb = openpyxl.load_workbook('RCB Top Sites B-3.xlsx')
+wb = openpyxl.load_workbook('RCB Top Sites B-2.xlsx')
 sheets = wb.sheetnames
 sheet0 = wb[sheets[0]]
 print(sheet0.max_row)
@@ -72,7 +72,7 @@ def captureKeyCombo(keyboard):
 
 
 # for i in range(2, sheet0.max_row):
-for i in range(48, 50):
+for i in range(49, 50):
     url = 'https://' + sheet0['A' + str(i)].value
     driver.get(url)
     print(i, driver.title)
